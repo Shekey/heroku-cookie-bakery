@@ -1,0 +1,21 @@
+$primary: #90aaf4;
+$danger: #d34357;
+$info: #faa65f;
+$warning: #f7ff2e;
+$success: #94c87e;
+$coral: #d57d6f;
+$blue: #d4e2ef;
+$secondary: #999999;
+// Required
+$theme-colors: (
+    "primary":    $primary,
+    "warning":  $warning,
+    "success":    $success,
+    "info":       $info,
+    "secondary":  $secondary,
+    "danger":     $danger,
+    "blue":     $blue,
+    "coralr":     $coral,
+);
+
+@import "~bootstrap/scss/bootstrap";
