@@ -54,7 +54,6 @@
         },
         data () {
             return {
-                mailBoxFallen: false,
                 isItNight: false,
                 orderTime: null,
                 showAlert: false,
