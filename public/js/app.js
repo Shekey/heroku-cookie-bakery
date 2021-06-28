@@ -5281,7 +5281,7 @@ __webpack_require__.r(__webpack_exports__);
 var actions = {
   ADD_ORDER: function ADD_ORDER(_ref, order) {
     var commit = _ref.commit;
-    axios.post('/api/orders222', order).then(function (res) {
+    axios.post('/api/orders', order).then(function (res) {
       if (res.data === "added") commit("ADD_ORDER", order);
       return order;
     })["catch"](function (err) {
