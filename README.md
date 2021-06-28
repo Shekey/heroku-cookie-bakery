@@ -33,6 +33,12 @@ possible any more.
 ● If someone tries to use the mailbox (click) it falls to the ground because of the poor
 construction quality
 
+Extras:
+
+● You can check all created orders on /list route
+● There is an auto-dismissible alert, after 3 secs it gets hidden by itself.
+● I implemented Vuex in case I get more ideas on how to enhance UI and UX
+
 ### Technologies
 
 * Project is done with Vue and Laravel with Sqlite.
