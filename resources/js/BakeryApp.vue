@@ -4,7 +4,7 @@
     </section>
 </template>
 <script>
-    import bakery from "../components/Bakery";
+    import bakery from "./components/Bakery";
     export default {
         components: {
             bakery,

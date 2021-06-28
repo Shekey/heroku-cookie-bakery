@@ -1,0 +1,115 @@
+@keyframes drop {
+    0% {
+        transform: rotate(15deg);
+    }
+    40% {
+        transform: rotate(-15deg);
+    }
+    60% {
+        transform: rotate(-15deg);
+    }
+    85% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bg-secondary-light {
+    background: var(--bs-secondary);
+    opacity: 0.3;
+}
+
+.night {
+    background: #151843;
+    .bg-blue {
+        box-shadow: 0px 0px 0px 18px rgb(255 255 255 / 3%), 0px 0px 0px 50px rgb(255 255 255 / 1%);
+    }
+}
+
+.order-created {
+    box-shadow: 0px 0px 0px 5px rgb(148 200 126 / 9%), 0px 0px 0px 30px rgb(148 200 126 / 3%);
+    transition: opacity 0.3s ease;
+}
+
+.moon {
+    margin: 0 auto;
+    background-color: #ebf3fe;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: inset -40px 0px 0px #d8e8f7, inset 20px 0px 0px #ffffff, inset -50px 0px 0px 20px #e2eefa, 0px 0px 0px 20px rgb(255 255 255 / 5%), 0px 0px 0px 40px rgb(255 255 255 / 3%), 0px 0px 0px 60px rgb(255 255 255 / 1%);
+    border: solid 10px;
+    transition: all 0.2s ease-in;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.ratio-1x1 {
+    transition: opacity 0.3s ease;
+}
+
+.-mt-10 {
+    margin-top: -28px;
+    position: relative;
+    z-index: 10;
+}
+.b-success.border {
+    border-color: #578544 !important;
+}
+
+.mailbox__hole {
+    width: 75%;
+    margin: 10px auto;
+    background: rgb(51, 51, 51);
+}
+
+.mailbox {
+    position: relative;
+    z-index: 10;
+}
+
+.drop {
+    animation: drop 1s forwards;
+    margin: 0 !important;
+    transition: margin-bottom 1s;
+}
+
+.handle {
+    width: 30px;
+    height: 3px;
+    z-index: 10;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    background: var(--bs-orange);
+}
+
+.mt-6 {
+    margin-top: 50px;
+}
+
+.triangle {
+    width: 50%;
+    height: 0;
+    padding-left: 50%;
+    padding-bottom: 50%;
+    overflow: hidden;
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: -500px;
+        border-left: 500px solid transparent;
+        border-right: 500px solid transparent;
+        border-bottom: 500px solid var(--bs-coralr);
+    }
+}

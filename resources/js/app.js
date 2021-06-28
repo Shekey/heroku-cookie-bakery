@@ -7,8 +7,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import store from '../js/store'
-import bakeryApp from '../js/components/BakeryApp'
-import orderList from '../js/components/ListOrders'
+import bakeryApp from './BakeryApp'
+import orderList from './ListOrders'
 
 require('./bootstrap');
 
@@ -20,7 +20,7 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('cookie', require('./components/BakeryApp.vue').default)
+Vue.component('cookie', require('./BakeryApp.vue').default)
 Vue.use(VueRouter)
 
 
